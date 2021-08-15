@@ -1,0 +1,66 @@
+
+:root {
+  --defaul-font: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #24252A;
+  padding: 1em;
+  display: flex;
+  color: #fff;
+  font-family: var(--defaul-font);
+
+  button {
+    border: 0 none;
+    background: transparent;
+    color: #fff;
+    transition: .3s;
+    padding: 0.5em 1em;
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 25px;
+      background: #0385A8;
+    }
+  }
+
+  div {
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+
+    &:first-child {
+      justify-content: flex-start;
+      text-transform: uppercase;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+}
+
+main {
+  display: flex;
+  padding: 1em;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  background: #20b2AA;
+  overflow: auto;
+
+  > * {
+    border: 1px solid #D4d4d4;
+    flex: 0 0 30%;
+    margin: 0.25em;
+  }
+}
